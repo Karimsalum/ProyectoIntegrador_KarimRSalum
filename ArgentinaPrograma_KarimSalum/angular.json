@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ArgentinaPrograma_KarimSalum": {
+    "ProyectoIntegrador_SalumKarimm": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/argentina-programa-karim-salum",
+            "outputPath": "dist/proyecto-integrador-salum-karimm",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css", 
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -64,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ArgentinaPrograma_KarimSalum:build:production"
+              "browserTarget": "ProyectoIntegrador_SalumKarimm:build:production"
             },
             "development": {
-              "browserTarget": "ArgentinaPrograma_KarimSalum:build:development"
+              "browserTarget": "ProyectoIntegrador_SalumKarimm:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ArgentinaPrograma_KarimSalum:build"
+            "browserTarget": "ProyectoIntegrador_SalumKarimm:build"
           }
         },
         "test": {
@@ -97,5 +100,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "49173ec0-418c-4535-bf41-bb0248cd839c"
   }
 }
