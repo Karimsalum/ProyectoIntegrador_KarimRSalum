@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/argentina-programa-karim-salum'),
+      dir: require('path').join(__dirname, './coverage/proyecto-integrador-salum-karimm'),
       subdir: '.',
       reporters: [
         { type: 'html' },

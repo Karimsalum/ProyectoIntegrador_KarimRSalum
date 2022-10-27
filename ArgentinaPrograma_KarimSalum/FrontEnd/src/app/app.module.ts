@@ -50,7 +50,7 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
     HttpClientModule
   ],
   providers: [
-    interceptorProvider
+    //interceptorProvider
   ],
   bootstrap: [AppComponent]
 })
